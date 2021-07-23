@@ -16,7 +16,7 @@ SortableAccount.sort(List<Account>);
 
 ```apex
 // Sort a list of accounts based on shipping country
-ListUtils.sort(accounts, new StringFieldComparator('ShippingCountry'));
+ListUtils.sort(accounts, new SObjectStringFieldComparator('ShippingCountry'));
 
 // Sort a list of accounts based on rating values
 // as defined in the rating picklist order (non-alphabetical sort)
