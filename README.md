@@ -15,8 +15,11 @@ SortableAccount.sort(List<Account>);
 [ListUtils](force-app/main/default/classes/ListUtils.cls) and the [Comparator](force-app/main/default/classes/ListUtils.cls#L21) interface demonstrate how you can sort lists with custom reusable comparators such as:
 
 ```apex
-// Sort a list of accounts based on shipping country
+// Sort a list of accounts alphabetically based on shipping country
 ListUtils.sort(accounts, new SObjectStringFieldComparator('ShippingCountry'));
+
+// Sort a list of accounts alphabetically based on industry
+ListUtils.sort(accounts, new SObjectStringFieldComparator('Industry'));
 
 // Sort a list of accounts based on rating values
 // as defined in the rating picklist order (non-alphabetical sort)
