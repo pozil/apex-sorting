@@ -25,3 +25,5 @@ ListUtils.sort(accounts, new SObjectStringFieldComparator('Industry'));
 // as defined in the rating picklist order (non-alphabetical sort)
 ListUtils.sort(accounts, new AccountRatingComparator());
 ```
+
+**A note on performance:** `ListUtils` uses a bubble sort algorithm. This works fine in most cases but other algorithms may be more efficient depending on the type and volume of data that you are sorting.
