@@ -14,4 +14,17 @@ public class SortableAccountTests {
     List<Account> expected = new List<Account>{ a2, a1, a3, a4 };
     System.assertEquals(accounts, expected);
   }
+
+  @isTest
+  private static void compareTo_fails_when_incompatible_type() {
+    SortableAccount sa1 = new SortableAccount(a1);
+    Integer i = 1;
+
+    try {
+      sa1.compareTo(i);
+      System.assert(false, 'Expected SortException');
+    } catch (SortableAccount.SortException e) {
+      System.assert(true);
+    }
+  }
 }
