@@ -1,3 +1,6 @@
+> **Warning**
+> Use the new Comparator interface instead of this
+
 # Sample Code for Sorting in Apex
 
 This repository contains sample code for advanced sorting with Apex. It presents two approaches that go beyond the default [List.sort](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_collections_lists_sorting.htm) method.
