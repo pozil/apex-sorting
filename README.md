@@ -1,5 +1,5 @@
 > **Warning**
-> Use the new Comparator interface instead of this
+> Starting from Winter '24, use the new [Comparator](https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_interface_System_Comparator.htm) interface instead of this.
 
 # Sample Code for Sorting in Apex
 
